@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<div class="jumbotron text-center">
+    	<h1>Welcome to my First Flask App!</h1>
+    	<p class="lead">Built using Flask and Bootstrap</p>
+    	{% if session.logged_in == NULL %}
+    		<a href="/register" class="btn btn-outline-primary btn-lg">Register</a>
+    		<a href="/login" class="btn btn-outline-success btn-lg">Login</a>
+    	{% endif %}
+	</div>
+{% endblock %}
